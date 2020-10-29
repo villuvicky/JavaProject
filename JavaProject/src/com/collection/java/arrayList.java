@@ -19,6 +19,14 @@ public class arrayList {
 		System.out.println(list.lastIndexOf("villu vicky"));
 		System.out.println(list.indexOf("kuruvi"));
 		for (String string : list) {
+			if(string.startsWith("v")) {
+				System.out.println(string);
+			}
+		}
+		System.out.println(list.stream().filter(s->s.startsWith("V")).count());
+		//count is terminal operation
+		//filter is intermediate operation
+		for (String string : list) {
 			System.out.println("using for each "+string);
 		}
 		ListIterator<String> Listiterator=list.listIterator();

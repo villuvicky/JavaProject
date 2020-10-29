@@ -15,7 +15,6 @@ public class HTTPurlexample {
 
 		URL url= new URL("https://reqres.in/api/users");
 		HttpURLConnection  connection=(HttpURLConnection) url.openConnection();
-
 		connection.setRequestMethod("GET");	
 		connection.connect();
 		int statusCode=connection.getResponseCode();
