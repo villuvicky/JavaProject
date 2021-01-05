@@ -10,6 +10,9 @@ public class arrayList {
 	public static void arraylisting() {
 		
 		List<String> list= new ArrayList<String>();
+		//List<Object> listing= new ArrayList<Object>();-- hetrogeneous type
+		//listing.add(2);
+		//listing.add("K");
 		list.add("Vicky");
 		list.add("kuruvi");
 		list.add("villu vicky");
