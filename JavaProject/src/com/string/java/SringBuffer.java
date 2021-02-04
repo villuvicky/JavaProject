@@ -5,7 +5,14 @@ public class SringBuffer {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringBuffer reverse= new StringBuffer("Villu");
-		System.out.println(reverse.reverse());
+		/*
+		 * StringBuffer is a peer class of String that provides much of the functionality of strings. 
+		 * String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences.
+		 * 	StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously.
+		 * StringBuffer is less efficient than StringBuilder.
+		 */
+		reverse.reverse();
+		System.out.println(reverse);
 		StringBuffer buffer= new StringBuffer("Villu");
 		buffer.append(" Vicky");
 		System.out.println(buffer);
@@ -16,6 +23,14 @@ public class SringBuffer {
 		StringBuffer insert= new StringBuffer("Villu");
 		System.out.println(insert.insert(5, "Vicky"));
 		System.out.println(insert.capacity());
+		
+		/*
+		 * he StringBuilder in Java represents a mutable sequence of characters. 
+		 * Since the String Class in Java creates and immutable sequence of characters, 
+		 * the StringBuilder class provides an alternate to String Class, as it creates a mutable sequence of characters.
+		 * StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously.
+		 * 	StringBuilder is more efficient than StringBuffer. 
+		 */
 		
 		StringBuilder reverse1= new StringBuilder("Villu");
 		System.out.println(reverse1.reverse());
@@ -29,6 +44,20 @@ public class SringBuffer {
 		StringBuilder insert2= new StringBuilder("Villu");
 		System.out.println(insert2.insert(5, "Vicky"));
 		System.out.println(insert2.capacity());
+		
+	      long startTime = System.currentTimeMillis();  
+	        StringBuffer sb = new StringBuffer("Java");  
+	        for (int i=0; i<10000; i++){  
+	            sb.append("Tpoint");  
+	        }  
+	        System.out.println("Time taken by StringBuffer: " + (System.currentTimeMillis() - startTime) + "ms");  
+	        startTime = System.currentTimeMillis();  
+	        StringBuilder sb2 = new StringBuilder("Java");  
+	        for (int i=0; i<10000; i++){  
+	            sb2.append("Tpoint");  
+	        }  
+	        System.out.println("Time taken by StringBuilder: " + (System.currentTimeMillis() - startTime) + "ms");  
+	    }  
 	}
 
-}
+

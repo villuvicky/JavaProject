@@ -13,8 +13,14 @@ public class MySql {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Class.forName("com.mysql.cj.jdbc.Driver");
+		String Host="root@localhost";
+		String Database = "user_database?serverTimezone=UTC";
+		String UserName=null;
+		String Password=null;
+		String Port=null;
+		
 
-		Connection connection=DriverManager.getConnection("jdbc:mysql://root@localhost/user_database?serverTimezone=UTC");
+		Connection connection=DriverManager.getConnection("jdbc:mysql://"+Host+"/"+Database+"");
 		Statement  statement=connection.createStatement();
 		//	int query=	statement.executeUpdate("CREATE TABLE Persons (\r\n" + 
 		//				"    PersonID int,\r\n" + 

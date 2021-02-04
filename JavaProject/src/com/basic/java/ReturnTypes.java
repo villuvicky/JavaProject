@@ -6,6 +6,7 @@ public class ReturnTypes {
 	public  int ReturnAmount() {
 		int amount=2000;
 		System.out.println("came here to collect amount and returning it to main method");
+		
 		return amount;//returning the variable to main method
 
 	}

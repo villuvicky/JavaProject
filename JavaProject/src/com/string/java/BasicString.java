@@ -7,7 +7,23 @@ public class BasicString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String name = "Vicky";
+		//class in java
+		
+		String FirstName="vignesh"; //string literals and stored in central place and when same values has to be stored it looks for it and shares same.
+		String SecondName="vignesh"; // since they are same so only one object will be used
+		/*
+		 * Strings in Java are Objects that are backed internally by a char array. 
+		 * Since arrays are immutable(cannot grow), Strings are immutable as well. 
+		 * Whenever a change to a String is made, an entirely new String is created.
+		 */
+		String s= "java";
+		s.concat("code");
+		System.out.println(s);//since it is immutable it will refer to old one and prints java
+		s=s.concat(" code"); //the String object is immutable, its reference variable is not
+		System.out.println(s); //since it is stored in s i will print java code
+		System.out.println(FirstName);
+		System.out.println(SecondName.toUpperCase());
+		String name = new String ("Vicky");//string class and creates new separate memory 
 		int number = 3;
 		System.out.println("Character sequence " + name.charAt(number));
 		System.out.println("length is " + name.length());

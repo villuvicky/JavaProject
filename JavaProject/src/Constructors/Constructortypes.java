@@ -1,4 +1,4 @@
-package com.basic.java;
+package Constructors;
 
 public class Constructortypes {
 	String Value;
