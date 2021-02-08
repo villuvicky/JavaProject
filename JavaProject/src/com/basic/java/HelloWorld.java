@@ -3,7 +3,8 @@ package com.basic.java;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/* main() method: The main() method, in Java, is the entry point for the JVM(Java Virtual Machine) into the java program. 
+		JVM launches the java program by invoking the main() method. */
 
 		System.out.print("Hi");
 

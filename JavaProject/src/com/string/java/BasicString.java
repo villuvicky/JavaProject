@@ -9,7 +9,7 @@ public class BasicString {
 		// TODO Auto-generated method stub
 		//class in java
 		
-		String FirstName="vignesh"; //string literals and stored in central place and when same values has to be stored it looks for it and shares same.
+		String FirstName="vignesh"; //string literals are stored in central place and when same values has to be stored it looks for it and shares same.
 		String SecondName="vignesh"; // since they are same so only one object will be used
 		/*
 		 * Strings in Java are Objects that are backed internally by a char array. 
