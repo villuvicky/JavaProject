@@ -6,8 +6,8 @@ public class MethodOverload {
 		int c=a+b;
 		System.out.println(c);
 	}
-	public void subtrct(int a,int b) {
-		int c=a-b;
+	public void subtrct(int a,int b,int c) {
+		 c=a-b;
 		System.out.println(c);
 	}
 	
@@ -16,7 +16,7 @@ public class MethodOverload {
 		MethodOverload load=new MethodOverload();
 		load.add(5, 7);
 		load.add(2, 3);
-		load.subtrct(5, 7);
+		load.subtrct(5, 7 ,0);
 	}
 
 }

@@ -1,4 +1,4 @@
-package InterviewQuestions;
+package InterviewPrograms;
 
 public class PalindromeReverse {
 
