@@ -2,28 +2,38 @@ package com.basic.java;
 
 public class ThisKeyword {
 
-	 int a=20;
-	 int b=10;
+	int a=20;  //instance variables
+	int b=10;
 
 
-	ThisKeyword(int a , int b) {
-		this.a = a; 
-		this.b = b; 
-		System.out.println("Inside parameterized constructor " + a+ " "+ b); 
-	}
+	public  void  method1() //method should not be static
+	
+	{
 
+		int a=5;
+		int b=100;
 
-	ThisKeyword() {
-		this(10,20);
-		System.out.println("Inside  default constructor"); 
+		System.out.println("Inside parameterized constructor " + a+ " "+ b);
+
+		//‘this’ is a reference variable/method that refers to the current class object.
+
+		System.out.println("Inside parameterized constructor and from instance " + this.a+ " "+ this.b);
+		
+		this.a=a;
+		this.b=b;
+		
+		System.out.println("Inside parameterized constructor " + a+ " "+ b);
+		
 		
 	}
 
 
+
+
 	public static void main(String[] args) {
 
-		ThisKeyword Object1= new ThisKeyword();
-		System.out.println( Object1.a+ " "+ Object1.b); 
+		ThisKeyword Object1= new ThisKeyword(); 
+		Object1.method1();
 	}
 
 }

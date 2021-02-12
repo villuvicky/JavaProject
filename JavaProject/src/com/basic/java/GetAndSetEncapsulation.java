@@ -2,7 +2,7 @@ package com.basic.java;
 
 public class GetAndSetEncapsulation {
 
-	private  int age;
+	private  int age=10;
 	private String name;
 	
 	public int getAge() {

@@ -3,6 +3,7 @@ package com.maps.java;
 import java.util.HashMap;
 
 public class HashMaps {
+	// The map interface is also part of the java collection framework, but it doesn’t inherit the collection of the interface.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

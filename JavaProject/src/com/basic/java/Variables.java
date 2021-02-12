@@ -3,18 +3,18 @@ package com.basic.java;
 public class Variables {
 
 
-	int engMarks; //instance variables and can be accessed by creating objects
-	int mathsMarks; 
+	int engMarks; /*instance variables and can be accessed by creating objects  
+	               Instance variables are non-static variables and are declared in a class outside any method, constructor or block.*/
+	int mathsMarks; //it will be refreshed every time
 	int phyMarks;
 	public static double salary; 
-	public static String name = "Harsh";//static variables 
+	public static String name = "Harsh";//static variables also called as class variables
 
 	public  void StudentAge() 
 	{ // local variable age 
 		int age = 0; 
 		age = age + 5; 
 		System.out.println("Student age is : " + age); 
-
 		salary=10;
 	} 
 
@@ -43,9 +43,9 @@ public class Variables {
 		System.out.println(obj2.engMarks); 
 		System.out.println(obj2.mathsMarks); 
 		System.out.println(obj2.phyMarks);
-		
+
 		obj1.StudentAge();
-		
+
 		System.out.println(salary+ " " + name);
 
 	}

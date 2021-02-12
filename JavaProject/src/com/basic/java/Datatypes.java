@@ -9,8 +9,9 @@ public class Datatypes {
 		short  s=2; // 2 bytes -32, 768 to 32, 767 
 		
 		Integer k=2;  // 4 bytes  -2, 147, 483, 648 to 2, 147, 483, 647   0, -231 +232-1
-		
+		//int is a primitive data type while Integer is a Wrapper class.
 		int i=2;
+		
 		
 		long l=5;   // 8 bytes  -263 +263-1  
 		
