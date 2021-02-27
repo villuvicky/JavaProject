@@ -5,6 +5,13 @@ import java.util.Iterator;
 
 public class Hashset {
 
+	
+	/*Set interface implements Hash set,Tree set, Linked set
+	 * Insertion order not maintained
+	 * Duplicates not allowed
+	 * null can be added
+	 * cannot fetch based on index
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		HashSet<String> set= new HashSet<String>();//insertion order not maintained
@@ -12,7 +19,7 @@ public class Hashset {
 		set.add("u");
 		set.add("p");
 		set.add("l");
-		set.add("k");//Duplicates not allowed
+		set.add("ku");//Duplicates not allowed
 		set.add(null);//null can be added
 		System.out.println(set);
 		set.remove(null);

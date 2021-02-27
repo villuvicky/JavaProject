@@ -1,6 +1,7 @@
 package com.set.java;
 
 import java.util.Iterator;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class TreeSets {
@@ -17,7 +18,11 @@ public class TreeSets {
 		System.out.println(numset.headSet(40));//gives values lesser than it
 		System.out.println(numset.tailSet(10));//gives equal or greater than it
 		System.out.println(numset.subSet(10, 30));//gives starting values from starting and value before last element
-		System.out.println( numset.comparator());//returns null if values are already in order
+		SortedSet<Integer> set2= new TreeSet<Integer>(); //store in sorted set
+		
+		set2=numset.subSet(10, 30);
+		System.out.println("subset is  "+set2);
+		System.out.println(numset.comparator());//returns null if values are already in order
 		System.out.println(numset.higher(10));//gives value higher than this
 		System.out.println(numset.lower(30));//gives value lower than this
 		System.out.println(numset.descendingSet());

@@ -2,7 +2,8 @@ package com.abstractions.java;
 
 public interface Parts {
 
-	/*Like a class, an interface can have methods and variables,
+	/*Interfaces specify what a class must do and not how. It is the blueprint of the class
+	 * Like a class, an interface can have methods and variables,
 	 *but the methods declared in an interface are by default abstract (only method signature, no body).  */
 	
 	public String value="Hey parts are here";  

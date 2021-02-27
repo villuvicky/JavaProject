@@ -16,6 +16,7 @@ public class FileRead {
 		while((currentline=bufferedReader.readLine())!=null) {
 			System.out.println(currentline);
 		}
+		bufferedReader.close();
 	}
 
 }
