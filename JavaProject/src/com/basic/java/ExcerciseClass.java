@@ -11,6 +11,26 @@ public class ExcerciseClass {
 		int date=10;
 		String xpath="//div[text()="+"\""+date+"\""+"]"+"//parent::div";
 		System.out.println(xpath);
+		
+		while(true) {
+			
+			if(date>13)
+			{
+				
+				System.out.println("pass");
+				break;
+				
+			}
+			
+			else{
+				
+				date++;
+				System.out.println(date);
+				
+			}
+			
+			
+		}
 	}
 
 }
